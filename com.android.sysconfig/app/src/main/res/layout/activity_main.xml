@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:padding="30dp"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_gradient">
+
+    <ImageView
+        android:id="@+id/com_facebook_usersettingsfragment_logo_image"
+        android:layout_width="193dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/facebook_logo"
+        android:layout_marginTop="65dp"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+
+        <EditText
+            android:id="@+id/email_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/et_bg"
+            android:paddingTop="8dp"
+            android:inputType="textEmailAddress"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:textSize="15dp"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:hint="Email or Phone"/>
+
+
+        <EditText
+            android:id="@+id/password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/et_bg"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:textSize="15dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_below="@id/email_et"/>
+
+        <Button
+            android:textSize="15dp"
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/com_facebook_button_blue"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="15dp"
+            android:text="Login"
+            android:layout_below="@id/password_et"/>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/sign_up_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up for Facebook"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>
